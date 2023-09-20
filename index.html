@@ -59,7 +59,7 @@
           <div class="container">
 
           <h1 class="first-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>Order Service</button>
          
         </div>
         </section>
@@ -478,10 +478,54 @@
                   </ul>
                 </div>
 
+                <div class="form-footer">
+                  <form class="subscribe-form" name="subscribe" autocomplete="off" novalidate>
+                    <label for="user-email" class="subscribe-mark">Subscribe</label>
+                    <input class="subscribe-email" type="email" name="user-email" id="user-email" placeholder="E-mail" autofocus />
+
+                    <button class="subscribe-button" type="submit">
+                      Subscribe
+                    </button>
+                  </form>
+
+                </div>
+
           
-          </div>
+              </div>
 
       </footer>
 
+      <div class="modal is-hidden" data-modal>
+        <div class="modal-window">
+
+        
+
+     <form class="modal-form" name="client-contact" autocomplete="off" novalidate>
+      <button type="button" data-modal-close>close</button>
+      <h2>Leave your contacts and we will call you back</h2>
+        <label class="mark-contact" for="client-name">Name
+        </label>
+        <input class="name-contact" type="text" name="client-name" id="client-name" autofocus />
+        <label class="mark-contact" for="client-phone">
+          Phone
+        </label>
+        <input class="phone-contact" type="tel" name="client-phone" id="client-phone" />
+        <label class="mark-contact" for="client-email">
+          Email
+        </label>
+        <input class="email-contact" name="client-email" type="email" id="client-email" />
+      </form>
+    
+    </div>
+      </div>
+
+
   </body>
+
+<script src="./js/script.js">
+
+</script>
+
 </html>
+
+ 

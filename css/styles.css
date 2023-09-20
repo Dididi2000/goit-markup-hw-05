@@ -59,6 +59,10 @@ img {
     min-width: 100%;
 }
 
+input {
+    font-family: inherit;
+}
+
 
 .container {
     max-width: 1158px;
@@ -84,7 +88,6 @@ img {
 
 .header-nav {
     display: flex;
-    gap: 24px;
     flex-grow: 1;
     align-items: center;
 }
@@ -92,6 +95,7 @@ img {
 .header-nav-list {
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 
 .link-logo-header {
@@ -450,4 +454,24 @@ margin-bottom: 72px;
 .increase {
     color: var(--color-second);
     max-width: 264px;
+}
+
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
