@@ -467,6 +467,18 @@ margin-bottom: 72px;
     justify-content: center;
     flex-shrink: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+}
+
+.modal-window {
+    width: 408px;
+    height: 584px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    padding: 24px;
+
 }
 
 
