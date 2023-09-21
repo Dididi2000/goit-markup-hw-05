@@ -478,7 +478,7 @@ margin-bottom: 72px;
     height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
-    padding: 24px;
+    padding: 72px 24px 24px;
 
 }
 
@@ -497,4 +497,51 @@ textarea {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.modal-title {
+    font-size: 16px;
+    line-height: 1,5;
+    margin-bottom: 16px;
+
+}
+
+.modal-field {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 4px;
+}
+
+.modal-input {
+    height: 58px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: #FCFCFC;
+}
+
+textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.40));
+    padding-top: 8px;
+    padding-left: 16px;
+}
+
+.modal-textarea {
+
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: #FCFCFC;
+
 }
