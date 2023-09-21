@@ -456,6 +456,12 @@ margin-bottom: 72px;
     max-width: 264px;
 }
 
+.subscribe {
+    width: 165px;
+    height: 40px;
+    padding: 8px 16px 8px 24px;
+}
+
 
 /* Modal */
 
@@ -489,10 +495,36 @@ margin-bottom: 72px;
 }
 
 .modal-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 24px;
     right: 24px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #e7e9fc;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+.modal-close:focus,
+.modal-close:hover {
+    background-color: #404BBF;
+    border-color: #404BBF;
+
+}
+
+.modal-close .close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:focus .close-icon,
+.modal-close:hover .close-icon {
+    fill: #FFFFFF;
 }
 
 .is-hidden {
@@ -523,9 +555,10 @@ margin-bottom: 72px;
 }
 
 .modal-input {
-    height: 58px;
+    height: 40px;
     width: 100%;
     padding: 11px 38px;
+    padding-right: 16px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: #FCFCFC;
@@ -537,6 +570,23 @@ margin-bottom: 72px;
     border-color: #4D5AE5;
 }
 
+.modal-input:focus + .modal-icon {
+    fill: #4D5AE5;
+
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+
+.modal-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-textarea {
     min-height: 120px;
@@ -544,9 +594,15 @@ margin-bottom: 72px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: #FCFCFC;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     resize: none;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+.modal-textarea:focus {
+    border-color: #4D5AE5;
 }
 
 textarea::placeholder {
@@ -558,6 +614,9 @@ textarea::placeholder {
     padding-left: 16px;
 }
 
+.modal-checkbox {
+    margin-bottom: 24px;
+}
 
 
 
