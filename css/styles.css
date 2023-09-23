@@ -654,6 +654,7 @@ fill: #FFFFFF;
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: #FCFCFC;
     margin-bottom: 16px;
+    padding: 8px 16px;
     resize: none;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
